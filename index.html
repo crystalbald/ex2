@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>web音乐站构建</title>
-    
-	<link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
     <div class="box">
         <h1>音界•工作站</h1>
-		
-		<h3>—— 动态音频制作工作站构建</h3>
+        <h3>—— 动态音频制作工作站构建</h3>
         <h2>你好，喜欢音乐的你</h2>
-		<br/><br/>
+        <br/><br/>
         <div class="btn-box">
-            <a href="html/teach.html" title="主页" target="_self">点此进入编曲入门教程</a>
+            <!-- 修改1：移除a标签的href跳转属性，保留其他内容和样式类 -->
+            <!-- 新增javascript:void(0)防止默认跳转，同时保留原文本和布局 -->
+            <a href="javascript:void(0)" title="主页" target="_self">点此进入编曲入门教程</a>
             <div>
-                <button onClick="location.href='html/music.html'">音乐</button>
-                <button onClick="location.href='html/bianqu.html'">编曲</button>
+                <!-- 修改2：移除两个button的onClick跳转事件，保留按钮文本和结构 -->
+                <button>音乐</button>
+                <button>编曲</button>
             </div>
         </div>
     </div>
-	<br/><br/>
-	<h4>软工一班-第16开发小组</h4>
+    <br/><br/>
+    <h4>软工一班-第16开发小组</h4>
 </body>
 </html>
