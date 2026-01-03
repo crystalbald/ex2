@@ -16,7 +16,6 @@ body {
 }
 
 .box {
-    
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -92,10 +91,13 @@ body {
     transition: 0.2s;
     width: 250px;
     text-align: end;
+    /* 新增：去除a标签点击后的指针样式，保持视觉统一（可选，保留原有hover样式） */
+    cursor: default;
 }
 
 .box .btn-box > a:hover {
     color: rgba(219,112,147,1);
+    /* 保留原有hover颜色变化，仅移除跳转功能 */
 }
 
 .box .btn-box > div {
@@ -114,7 +116,8 @@ body {
     color: rgba(255,255,255,0.9);
     border-radius: 5px;
     transition: 0.2s;
-    cursor: pointer;
+    /* 新增：去除按钮点击后的指针样式，保持视觉统一（可选，保留原有hover样式） */
+    cursor: default;
     font-size: 21px;
     font-family:"幼圆";
 }
@@ -125,7 +128,7 @@ body {
 
 .box .btn-box > div > button:hover {
     border: 1px solid rgba(248, 108, 76,0.8);
-    
     background:  linear-gradient(120deg, #a6c0fe 0%, #f68084 100% );
     color: rgba(255,228,225,1);
+    /* 保留原有hover渐变效果，仅移除跳转功能 */
 }
